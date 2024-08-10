@@ -1,0 +1,18 @@
+[
+  {
+    "description": "Docker Base Image",
+    "value": "alpine:3.20",
+    "files": [
+      {
+        "filePath": "Dockerfile",
+        "valuePath": "FROM[0]",
+        "valueSuffix": "@sha256:",
+        "partialMatch": true
+      },
+      {
+        "filePath": "Taskfile.yml",
+        "valuePath": ".env.IMAGE"
+      }
+    ]
+  }
+]

@@ -1,16 +1,24 @@
 ---
-name: "Hello World"
-description: "Greet someone and record the time"
+name: "Conventional Commits Next Version"
+description: "Get the next version based on conventional commits"
 inputs:
-  who-to-greet: # id of input
-    description: "Who to greet"
+  calculation-mode:
+    description: "Calculation mode"
+    required: false
+    default: "Batch"
+  from-version:
+    description: "From version"
     required: true
-    default: "World"
+  from-reference:
+    description: "From reference"
+    required: true
 outputs:
-  time: # id of output
-    description: "The time we greeted you"
+  next-version:
+    description: "The next version"
 runs:
   using: "docker"
   image: "Dockerfile"
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.calculation-mode }}
+    - ${{ inputs.from-version }}
+    - ${{ inputs.from-reference }}

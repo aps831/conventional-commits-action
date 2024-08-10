@@ -25,7 +25,7 @@ The next version
 ## Example usage
 
 ```yaml
-uses: aps831/conventional-commits-action@v0.1.0
+uses: aps831/conventional-commits-action@${TAG}
 with:
     from-version: 0.3.0
     from-reference: v0.3.0
