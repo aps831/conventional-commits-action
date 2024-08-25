@@ -1,6 +1,6 @@
 # Conventional Commits action
 
-This action calculate the next version number based on conventional commits. It is a wrapper around
+This action calculates the next version number based on conventional commits. It is a wrapper around
 [conventional_commits_next_version](https://gitlab.com/DeveloperC/conventional_commits_next_version).
 
 ## Inputs
