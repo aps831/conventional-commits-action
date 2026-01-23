@@ -1,6 +1,7 @@
 # Conventional Commits action
 
-This action calculate the next version number based on conventional commits
+This action calculates the next version number based on conventional commits. It is a wrapper around
+[conventional_commits_next_version](https://gitlab.com/DeveloperC/conventional_commits_next_version).
 
 ## Inputs
 
@@ -25,7 +26,7 @@ The next version
 ## Example usage
 
 ```yaml
-uses: aps831/conventional-commits-action@v0.1.0
+uses: aps831/conventional-commits-action@v0.2.0
 with:
     from-version: 0.3.0
     from-reference: v0.3.0
